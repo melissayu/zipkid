@@ -1,20 +1,125 @@
 <div ng-app="chdApp" ng-controller="ZipKidCtrl">
-<p> Find a zip kid: </p>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="../bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+	<script src="splash.js"></script>
+<style>
+	h1 {
+		text-align:center;
+	}
+	.odd {
+		background-color:white;
+	}
+	.even {
+		background-color:#eee;
+	}
+	.section{
+		padding:50px 150px 50px 150px;
 
-<img ng-src="http://www.uwwa.org/wp-content/uploads/2014/04/o-PARENT-CHILD-READING-facebook.jpg" style="width:700px;"/>
+	}
+	.dark {
 
-<div>
-<input></input>
-<button>Search</button>
-</div>
-<div id="list" style="margin:20px 0px 20px 0px">
-	<div ng-repeat="kid in results" style="border:1px solid green; margin:5px">
-		<span><img ng-src="http://png-1.findicons.com/files/icons/367/ifunny/128/boy.png" style="width:50px;height:50px"/></span>
-		<span style="font-size:30px;">{{kid.name}}</span>
-		<span>Age {{kid.age}}</span>
-		<span style="">Attention Span: {{kid.attentionSpan}} minutes</span>
+		background-color:#5F6062;
+
+	}
+	.dark h3 {
+		font-style: italic;
+		color:#efefef;
+		text-align: center;
+
+	}
+	.quote {
+		padding:10px;
+	}
+
+	h1 {
+		color:#5F6062;
+	}
+	 h2, h3, h4, h5 {
+		color:#5F6062;
+		font-weight:400;
+
+	}
+	ul{
+		font-size:28px;
+		color:#5F6062;
+	}
+	.memberimg img{
+		display:inline;
+		width:250px;
+		height:200px;
+
+	}
+</style>
+	<img ng-src="images/family.jpg" style="width:100%;margin-top:-3px"/>
+
+
+	<div class="dark quote">
+		<h3>"The soul is healed by being with children"</h3>
 	</div>
-</div>
 
+	<div class="odd section">
+		<h1>What's Zipkid?</h1>
+		<h3>It’s having it all...on your terms.</h3>
+		<h2>Raising a child is forever but it doesn’t have to be. Pass along your knowledge of the world, own the carpool lane, or simply give parenting a spin.</h2>
+		<h2>Save millions on rearing a child of your own. With ZipKid, you sort your ideal afternoon playdate by: attention span capacity, temperament, and skill set.</h2>
+	</div>
+	<div class="even section">
+		<h1>How It Works</h1>
+		<ul>
+			<li>Fill out application, successfully pass background check</li>
+			<li>Select closest, available Playdate</li>
+			<li>Set event pick up or drop off preference</li>
+		</ul>
+	</div>
+	<div class="odd section">
+		<h1>Simple Guide to a Successful Playdate</h1>
+		<img ng-src="images/rules.png"/>
+	</div>
+	<div class="even section">
+		<h1>Don't take it from us.</h1>
+		<h2>Take it from our members. Here's how they use Zipkid.</h2>
+		<div>
+			<span class="memberimg"><img ng-src="images/vogue.jpg"/></span>
+			<span class="memberimg"><img ng-src="images/jlo.jpg"/></span>
+			<span class="memberimg"><img ng-src="images/subway.jpg"/></span>			
+		</div>
+	</div>
+
+
+	<div class="container" style="clear:both padding-bottom:100px">
+		<h2 style="display:inline-block"> Find a zip kid: </h2>
+		<input></input>
+		<img ng-src="images/calendar.png" style="width:50px"/>
+<!-- 		<button>Search</button>
+ --><!-- 		<input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime">
+ 
+		<script type="text/javascript">
+		    $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+		</script>
+
+ -->
+	    <div class="btn-group" style="">
+	        <label class="btn btn-success" ng-model="radioModel" btn-radio="'Left'" uncheckable>Search By Time</label>
+	        <label class="btn btn-success" ng-model="radioModel" btn-radio="'Middle'" uncheckable>Browse by Capacity</label>
+	        <label class="btn btn-success" ng-model="radioModel" btn-radio="'Right'" uncheckable>Search by ?</label>
+	    </div>
+	
+
+
+		<div id="list" style="margin:20px 0px 20px 0px">
+			<div>
+				<img ng-src="images/kid-profiles.png"/>
+			</div>
+			<!--<div ng-repeat="kid in results" style="border:1px solid green; margin:5px">
+				<span><img ng-src="http://png-1.findicons.com/files/icons/367/ifunny/128/boy.png" style="width:50px;height:50px"/></span>
+				<span style="font-size:30px;">{{kid.name}}</span>
+				<span>Age {{kid.age}}</span>
+				<span style="">Attention Span: {{kid.attentionSpan}} minutes</span>
+				<img ng-src="images/slider.jpg" style="width:100%"/>
+			</div>-->
+		</div>
+
+	</div>
 
 </div>

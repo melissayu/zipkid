@@ -17,12 +17,12 @@ angular.module('chdApp')
 
     $scope.results = [
     	{name:'Joey', age:7, gender:'m', attentionSpan:90},
-    	{name:'Tommy', age:5, gender:'m', attentionSpan:90},
+    	/*{name:'Tommy', age:5, gender:'m', attentionSpan:90},
     	{name:'Bella', age:4, gender:'f', attentionSpan:90},
     	{name:'John', age:8, gender:'m', attentionSpan:90},
     	{name:'Jenny', age:7, gender:'f', attentionSpan:90},
     	{name:'Kristy', age:3, gender:'f', attentionSpan:90},
-    	{name:'Chad', age:28, gender:'m', attentionSpan:90},
+    	{name:'Chad', age:28, gender:'m', attentionSpan:90},*/
     ]
 
 
@@ -34,5 +34,5 @@ angular.module('chdApp')
             {image: 'images/img04.jpg', description: 'Image 04'}
         ];
 
-        
+
   });

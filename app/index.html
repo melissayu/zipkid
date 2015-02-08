@@ -54,23 +54,28 @@
         margin:10px 0px 0px 0px;
       }
       .title {
-        margin-left:100px;
       }
       .logo { 
         display:inline-block;
         height:100px;
         margin-left:200px;
         margin-top:20px;
-        background: url('images/icon.png') no-repeat;
         background-size: 100px;
       }
       h1 {
         font-size:60px;
         font-color:#5F6062;
       }
+      .header {
+        margin-bottom:0px;
+      }
     </style>
     <div class="header">
-      <div class="logo"><h1 class="title">zipkid</h1></div>
+      <div class="logo">
+        <img ng-src="images/icon.png" style="float:left; width:100px"/>
+        <h1 class="title" style="float:left; height:100px">zipkid</h1>
+        <h4 style="float:right; margin-top:60px; margin-left:5px">All of the magic, none of the meltdowns</h4>
+      </div>
       
       <div class="bar"></div>
     </div>
